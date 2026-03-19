@@ -115,6 +115,41 @@
     }
     .dark .hero-texture { opacity: 0.055; }
 
+    /* ─── HERO LOGO ──────────────────────────────────────── */
+    .hero-logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-logo-img {
+      height: 64px;
+      width: auto;
+      object-fit: contain;
+      /* Subtle drop shadow so logo reads on the gradient bg */
+      filter: drop-shadow(0 2px 12px rgba(0,0,0,0.10));
+      transition: filter 0.3s ease;
+    }
+    .dark .hero-logo-img {
+      /* Lighten slightly in dark mode if logo is dark-coloured */
+      filter: drop-shadow(0 2px 16px rgba(0,0,0,0.40)) brightness(1.08);
+    }
+
+    /* ─── NAV LOGO ───────────────────────────────────────── */
+    .nav-logo-img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 1px 4px rgba(0,0,0,0.08));
+      transition: filter 0.3s ease, opacity 0.2s ease;
+    }
+    .dark .nav-logo-img {
+      filter: drop-shadow(0 1px 6px rgba(0,0,0,0.30)) brightness(1.10);
+    }
+    .nav-logo-img:hover {
+      opacity: 0.82;
+    }
+
     /* ─── HEADLINE CONTRAST ──────────────────────────────── */
     .hero-word-imago {
       font-weight: 200;
@@ -465,7 +500,7 @@
       color: #8a9aaa;
     }
 
-    /* ─── START CARD TITLE — slightly deeper than heading-primary default ── */
+    /* ─── START CARD TITLE ───────────────────────────────── */
     .start-card-title {
       color: #0e1c26;
     }
@@ -473,7 +508,7 @@
       color: #f2f6fa;
     }
 
-    /* ─── START CARD DESCRIPTION — slightly less muted than body-muted ──── */
+    /* ─── START CARD DESCRIPTION ─────────────────────────── */
     .start-card-desc {
       color: #3d5060;
     }
