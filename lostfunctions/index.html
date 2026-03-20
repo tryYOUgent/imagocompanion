@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- ============================================================ -->
+  <!-- THEME INIT: Runs before paint to prevent flash of wrong mode -->
+  <!-- Reads pmg_theme from localStorage; falls back to OS pref     -->
+  <!-- ============================================================ -->
+  
+  
+
+<!-- SEO Meta Tags -->
+<title>LOST FUNCTIONS</title>
+<meta property="og:title" content="LOST FUNCTIONS" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="LOST FUNCTIONS" />
+<link rel="icon" href="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1772249124379_blob.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1772249124379_blob.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1772249124379_blob.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1772249124379_blob.png" />
+<!-- End SEO Meta Tags -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-full antialiased bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+
+<!-- ============================================================================ -->
+<!-- PAGE WRAPPER: Full-height flex column layout                                 -->
+<!-- ============================================================================ -->
+<div class="min-h-screen flex flex-col">
+
+  <!-- ============================================================================ -->
+  <!-- STICKY HEADER: Logo, title, where-am-i indicator, theme toggle             -->
+  <!-- ============================================================================ -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-50/80 bg-slate-50/95 dark:bg-slate-950/90 border-b border-slate-200 dark:border-slate-800 shadow-soft">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+
+      <!-- Logo / Brand -->
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="h-9 w-9 rounded-xl bg-brand/15 dark:bg-brand/25 flex items-center justify-center flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" class="text-brand" style="color:#36D6B5">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="font-semibold tracking-tight text-sm sm:text-base truncate">PayMeGPT</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">IMAGO Lost Functions Assessment</div>
+        </div>
+      </div>
+
+      <!-- WHERE AM I Indicator: Section arrow + name -->
+      <div id="where-am-i" class="flex items-center gap-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 min-w-0 flex-1 justify-center">
+        <span class="text-brand font-bold" aria-hidden="true">➤</span>
+        <span id="wai-label" class="font-medium text-brand truncate">Section 1 of 6</span>
+        <span id="wai-title" class="text-slate-400 hidden sm:inline truncate">— Thinking</span>
+      </div>
+
+      <!-- Theme Toggle -->
+      <!-- ============================================================ -->
+      <!-- THEME TOGGLE: Reliable light/dark switch                     -->
+      <!-- Shows 🌙 Dark when light; ☀️ Light when dark               -->
+      <!-- ============================================================ -->
+      <button
+        id="themeToggle"
+        class="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors flex items-center gap-1.5 flex-shrink-0"
+        aria-label="Toggle light/dark mode"
+        type="button"
+      >
+        <!-- Light mode: show moon + Dark label -->
+        <span id="theme-icon-moon" aria-hidden="true">🌙</span>
+        <span id="theme-label-text" class="text-xs hidden sm:inline">Dark</span>
+      </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="h-1 bg-slate-200 dark:bg-slate-800">
+      <div id="progress-bar" class="progress-fill h-full bg-brand" style="width: 16.66%; background-color:#36D6B5"></div>
+    </div>
+  </header>
+
+  <!-- ============================================================================ -->
+  <!-- MAIN CONTENT AREA: Two-column layout (nav + form) on large screens          -->
+  <!-- ============================================================================ -->
+  <div class="flex-1 mx-auto w-full max-w-5xl px-4 sm:px-6 py-8 lg:py-12">
+    <div class="flex gap-8 lg:gap-12">
+
+      <!-- ============================================================================ -->
+      <!-- STICKY SECTION NAV: Left sidebar on large screens                          -->
+      <!-- ============================================================================ -->
+      <aside class="hidden lg:block w-52 flex-shrink-0">
+        <div class="sticky top-24">
+          <div class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Sections</div>
+          <nav class="sticky-nav space-y-1 max-h-[70vh] overflow-y-auto pr-1" aria-label="Section navigation">
+            <a href="#section-thinking" class="nav-item block text-sm py-1.5 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors text-slate-600 dark:text-slate-400" data-section="1">1 — Thinking</a>
+            <a href="#section-feeling" class="nav-item block text-sm py-1.5 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors text-slate-600 dark:text-slate-400" data-section="2">2 — Feeling</a>
+            <a href="#section-acting" class="nav-item block text-sm py-1.5 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors text-slate-600 dark:text-slate-400" data-section="3">3 — Acting / Moving</a>
+            <a href="#section-sensing" class="nav-item block text-sm py-1.5 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors text-slate-600 dark:text-slate-400" data-section="4">4 — Sensing</a>
+            <a href="#section-being" class="nav-item block text-sm py-1.5 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors text-slate-600 dark:text-slate-400" data-section="5">5 — Being / Aliveness</a>
+            <a href="#section-integration" class="nav-item block text-sm py-1.5 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors text-slate-600 dark:text-slate-400" data-section="6">6 — Integration</a>
+          </nav>
+          <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800">
+            <button
+              id="clearAllBtn"
+              type="button"
+              class="w-full text-xs text-slate-400 dark:text-slate-500 hover:text-red-500 dark:hover:text-red-400 transition-colors py-1.5 px-2 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 text-left"
+              aria-label="Clear all saved answers"
+            >
+              🗑 Clear all answers
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ============================================================================ -->
+      <!-- FORM MAIN COLUMN                                                           -->
+      <!-- ============================================================================ -->
+      <main class="flex-1 min-w-0">
+
+        <!-- ============================================================================ -->
+        <!-- PAGE HEADER: Title, subtitle, instructions                                 -->
+        <!-- ============================================================================ -->
+        <div class="mb-10">
+          <div class="relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-8 shadow-soft">
+            <div class="absolute inset-0 bg-grid text-slate-900 dark:text-white pointer-events-none"></div>
+            <div class="relative">
+              <div class="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 dark:bg-brand/15 px-3 py-1 text-xs font-medium mb-4" style="color:#36D6B5">
+                <span class="h-1.5 w-1.5 rounded-full" style="background:#36D6B5"></span>
+                IMAGO Assessment · Page 1 of 2
+              </div>
+              <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                IMAGO Lost Functions Assessment
+              </h1>
+              <p class="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
+                Explore childhood messages that may have restricted your natural expression.
+              </p>
+              <p class="mt-4 text-sm text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/60 rounded-xl px-4 py-3 inline-block">
+                💡 You can leave any question blank. Take your time — your answers are saved automatically as you type.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile: Clear button -->
+        <div class="lg:hidden mb-6 flex justify-end">
+          <button
+            id="clearAllBtnMobile"
+            type="button"
+            class="text-xs text-slate-400 dark:text-slate-500 hover:text-red-500 dark:hover:text-red-400 transition-colors py-1.5 px-3 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 border border-slate-200 dark:border-slate-700"
+            aria-label="Clear all saved answers"
+          >
+            🗑 Clear all answers
+          </button>
+        </div>
+
+        <!-- ============================================================================ -->
+        <!-- ASSESSMENT FORM                                                            -->
+        <!-- ============================================================================ -->
+        <form id="imagoForm" novalidate>
+
+          <!-- ================================================================== -->
+          <!-- SECTION 1 — THINKING                                              -->
+          <!-- ================================================================== -->
+          <section id="section-thinking" data-section="1" data-section-title="Thinking" class="mb-12" aria-labelledby="heading-thinking">
+
+            <div class="section-divider border-brand/40 dark:border-brand/30 mb-6" style="border-color: rgba(54,214,181,0.4)">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-bold uppercase tracking-widest" style="color:#36D6B5">Section 1 of 6</span>
+                <span class="flex-1 border-t border-brand/20 dark:border-brand/15"></span>
+              </div>
+              <h2 id="heading-thinking" class="mt-1 text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+                Thinking
+              </h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">The domain of thoughts, opinions, analysis, and intellectual expression.</p>
+            </div>
+
+            <div class="space-y-6">
+
+              <!-- Q1: Messages received -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_thinking_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  1. What messages did you receive about thinking for yourself?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">
+                  What did your family or caregivers communicate — directly or indirectly — about your thoughts and opinions?
+                </p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-thinking-1">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-thinking-1" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for thinking messages">
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Common messages in this domain:</p>
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Don't think for yourself"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Be quiet — adults decide"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "You're not smart enough"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Your opinion doesn't matter"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_thinking_message" name="lf_thinking_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Write whatever comes to mind…" rows="3" aria-label="Messages received about thinking"></textarea>
+              </div>
+
+              <!-- Q2: Specific example -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_thinking_example" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  2. Can you recall a specific example or memory?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A moment, event, or repeated pattern that stands out.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-thinking-2">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-thinking-2" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for thinking memory">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "A time I remember is being told my idea was wrong in front of others…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I remember sharing my opinion and being laughed at…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My parent always corrected my reasoning, even when I was right…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_thinking_example" name="lf_thinking_example" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Describe a specific memory or situation…" rows="3" aria-label="Specific example about thinking"></textarea>
+              </div>
+
+              <!-- Q3: How you adapted -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_thinking_protection_or_decision" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  3. How did you adapt? What decision did you make to stay safe or connected?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Children are creative — what strategy did you develop in response?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-thinking-3">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-thinking-3" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for thinking adaptation">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to keep my thoughts to myself…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I decided to always agree with authority figures…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I became very analytical to prove I was smart enough…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I stopped sharing ideas unless I was certain they were right…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_thinking_protection_or_decision" name="lf_thinking_protection_or_decision" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I stopped sharing my opinions, I became very agreeable…" rows="3" aria-label="How you adapted regarding thinking"></textarea>
+              </div>
+
+              <!-- Q4: How it shows up now -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_thinking_relationship_playout" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  4. How does this pattern show up in your relationships today?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Notice how this old adaptation might still be running in the background.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-thinking-4">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-thinking-4" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for thinking in relationships">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I shut down when my partner disagrees with me…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I avoid sharing my real opinions to keep the peace…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I over-control conversations to make sure I'm heard…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I defer to my partner's decisions even when I disagree…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_thinking_relationship_playout" name="lf_thinking_relationship_playout" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I defer to my partner's decisions, I doubt my own judgment…" rows="3" aria-label="How thinking pattern shows up in relationships"></textarea>
+              </div>
+
+              <!-- Q5: New permission message -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_thinking_new_self_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  5. What new permission message would you offer yourself?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A gentle, affirming message that counters the old one. Write it in the first person if you can.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-thinking-5">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-thinking-5" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for thinking permission message">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I am allowed to think for myself."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My thoughts and opinions have value."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "It is safe for me to share what I think."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My perspective matters."</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_thinking_new_self_message" name="lf_thinking_new_self_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., My thoughts and opinions have value. I am allowed to think for myself…" rows="3" aria-label="New permission message for thinking"></textarea>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================================================================== -->
+          <!-- SECTION 2 — FEELING                                               -->
+          <!-- ================================================================== -->
+          <section id="section-feeling" data-section="2" data-section-title="Feeling" class="mb-12" aria-labelledby="heading-feeling">
+
+            <div class="section-divider border-brand/40 dark:border-brand/30 mb-6" style="border-color: rgba(54,214,181,0.4)">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-bold uppercase tracking-widest" style="color:#36D6B5">Section 2 of 6</span>
+                <span class="flex-1 border-t border-brand/20 dark:border-brand/15"></span>
+              </div>
+              <h2 id="heading-feeling" class="mt-1 text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Feeling</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">The domain of emotions, emotional expression, and emotional safety.</p>
+            </div>
+
+            <div class="space-y-6">
+
+              <!-- Q1 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_feeling_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  1. What messages did you receive about feeling and expressing emotions?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">What was communicated about which emotions were acceptable or safe to show?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-feeling-1">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-feeling-1" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for feeling messages">
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Common messages in this domain:</p>
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Don't cry"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Stop being so sensitive"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Be nice — don't be angry"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Feelings aren't important"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_feeling_message" name="lf_feeling_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Write whatever comes to mind…" rows="3" aria-label="Messages received about feeling"></textarea>
+              </div>
+
+              <!-- Q2 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_feeling_example" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  2. Can you recall a specific example or memory?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A moment when an emotion was dismissed, punished, or rewarded in a way that shaped you.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-feeling-2">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-feeling-2" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for feeling memory">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "A time I remember is crying and being sent to my room…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I remember feeling scared and being told I was overreacting…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Anger was never allowed — only my parent could be angry…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_feeling_example" name="lf_feeling_example" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Describe a specific memory or situation…" rows="3" aria-label="Specific example about feeling"></textarea>
+              </div>
+
+              <!-- Q3 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_feeling_protection_or_decision" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  3. How did you adapt? What decision did you make to stay safe or connected?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">What did you do with your emotions to keep the peace or stay loved?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-feeling-3">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-feeling-3" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for feeling adaptation">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to suppress sadness and pretend I was fine…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I decided to only show 'positive' emotions…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to take care of others' feelings instead of my own…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I became the 'happy one' in the family…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_feeling_protection_or_decision" name="lf_feeling_protection_or_decision" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I learned to suppress sadness, I only showed 'positive' emotions…" rows="3" aria-label="How you adapted regarding feeling"></textarea>
+              </div>
+
+              <!-- Q4 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_feeling_relationship_playout" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  4. How does this pattern show up in your relationships today?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How might this old adaptation affect emotional intimacy or conflict in current relationships?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-feeling-4">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-feeling-4" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for feeling in relationships">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I shut down during conflict and go silent…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I avoid difficult conversations to keep the peace…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I struggle to name what I'm feeling in the moment…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I over-control my emotional reactions…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_feeling_relationship_playout" name="lf_feeling_relationship_playout" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I shut down during conflict, I struggle to name what I'm feeling…" rows="3" aria-label="How feeling pattern shows up in relationships"></textarea>
+              </div>
+
+              <!-- Q5 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_feeling_new_self_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  5. What new permission message would you offer yourself?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A compassionate, freeing message for your emotional self.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-feeling-5">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-feeling-5" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for feeling permission message">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I am allowed to feel and express fully."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "All of my feelings are welcome."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My emotions matter and deserve space."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "It is safe for me to be moved by my own feelings."</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_feeling_new_self_message" name="lf_feeling_new_self_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., All of my feelings are welcome. I am allowed to feel and express fully…" rows="3" aria-label="New permission message for feeling"></textarea>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================================================================== -->
+          <!-- SECTION 3 — ACTING / MOVING                                       -->
+          <!-- ================================================================== -->
+          <section id="section-acting" data-section="3" data-section-title="Acting / Moving" class="mb-12" aria-labelledby="heading-acting">
+
+            <div class="section-divider border-brand/40 dark:border-brand/30 mb-6" style="border-color: rgba(54,214,181,0.4)">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-bold uppercase tracking-widest" style="color:#36D6B5">Section 3 of 6</span>
+                <span class="flex-1 border-t border-brand/20 dark:border-brand/15"></span>
+              </div>
+              <h2 id="heading-acting" class="mt-1 text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Acting / Moving</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">The domain of action, initiative, movement, and doing.</p>
+            </div>
+
+            <div class="space-y-6">
+
+              <!-- Q1 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_acting_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  1. What messages did you receive about taking action, moving, or initiating?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">What was communicated about your energy, movement, or drive to act?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-acting-1">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-acting-1" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for acting messages">
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Common messages in this domain:</p>
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Sit still"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Don't make a scene"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Stop being so loud"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "You're lazy"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_acting_message" name="lf_acting_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Write whatever comes to mind…" rows="3" aria-label="Messages received about acting and moving"></textarea>
+              </div>
+
+              <!-- Q2 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_acting_example" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  2. Can you recall a specific example or memory?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A time when your natural energy or initiative was redirected or stopped.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-acting-2">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-acting-2" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for acting memory">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "A time I remember is starting a project and being told to stop and sit down…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I remember being punished for being too energetic or enthusiastic…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My ideas and initiatives were often dismissed or ignored…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_acting_example" name="lf_acting_example" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Describe a specific memory or situation…" rows="3" aria-label="Specific example about acting"></textarea>
+              </div>
+
+              <!-- Q3 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_acting_protection_or_decision" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  3. How did you adapt? What decision did you make to stay safe or connected?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How did you modify your natural drive or energy to fit in?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-acting-3">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-acting-3" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for acting adaptation">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to become very still and controlled…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I decided to stop starting things in case I was stopped…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to wait for permission before acting…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I became passive to avoid conflict…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_acting_protection_or_decision" name="lf_acting_protection_or_decision" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I became very still and controlled, I stopped starting things…" rows="3" aria-label="How you adapted regarding acting"></textarea>
+              </div>
+
+              <!-- Q4 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_acting_relationship_playout" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  4. How does this pattern show up in your relationships today?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How might this affect your ability to initiate, follow through, or be spontaneous?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-acting-4">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-acting-4" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for acting in relationships">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I wait for others to initiate plans or decisions…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I feel guilty when I'm too energetic or enthusiastic…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I avoid taking the lead even when I know what to do…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I over-control my spontaneity to seem calm…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_acting_relationship_playout" name="lf_acting_relationship_playout" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I wait for others to initiate, I feel guilty when I'm too energetic…" rows="3" aria-label="How acting pattern shows up in relationships"></textarea>
+              </div>
+
+              <!-- Q5 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_acting_new_self_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  5. What new permission message would you offer yourself?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A freeing message for your active, energetic self.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-acting-5">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-acting-5" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for acting permission message">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I am allowed to move and act freely."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My energy and initiative are gifts."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "It is safe for me to take up space and lead."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My drive to act matters and is welcome."</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_acting_new_self_message" name="lf_acting_new_self_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., My energy and initiative are gifts. I am allowed to move and act freely…" rows="3" aria-label="New permission message for acting"></textarea>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================================================================== -->
+          <!-- SECTION 4 — SENSING                                               -->
+          <!-- ================================================================== -->
+          <section id="section-sensing" data-section="4" data-section-title="Sensing" class="mb-12" aria-labelledby="heading-sensing">
+
+            <div class="section-divider border-brand/40 dark:border-brand/30 mb-6" style="border-color: rgba(54,214,181,0.4)">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-bold uppercase tracking-widest" style="color:#36D6B5">Section 4 of 6</span>
+                <span class="flex-1 border-t border-brand/20 dark:border-brand/15"></span>
+              </div>
+              <h2 id="heading-sensing" class="mt-1 text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Sensing</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">The domain of physical senses, body awareness, pleasure, and sensory experience.</p>
+            </div>
+
+            <div class="space-y-6">
+
+              <!-- Q1 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_sensing_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  1. What messages did you receive about your body, senses, or physical pleasure?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">What was communicated about your body, touch, physical enjoyment, or sensory experience?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-sensing-1">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-sensing-1" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for sensing messages">
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Common messages in this domain:</p>
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Don't talk about bodies"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Cover up"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "That's inappropriate"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Don't enjoy that too much"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_sensing_message" name="lf_sensing_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Write whatever comes to mind…" rows="3" aria-label="Messages received about sensing"></textarea>
+              </div>
+
+              <!-- Q2 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_sensing_example" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  2. Can you recall a specific example or memory?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A time when your sensory experience or bodily expression was restricted or shamed.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-sensing-2">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-sensing-2" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for sensing memory">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "A time I remember is being told my body was wrong or shameful…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I remember enjoying food or touch and being told to stop…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Physical affection was absent or felt dangerous in my home…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_sensing_example" name="lf_sensing_example" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Describe a specific memory or situation…" rows="3" aria-label="Specific example about sensing"></textarea>
+              </div>
+
+              <!-- Q3 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_sensing_protection_or_decision" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  3. How did you adapt? What decision did you make to stay safe or connected?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How did you manage your sensory self to stay safe or acceptable?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-sensing-3">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-sensing-3" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for sensing adaptation">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to disconnect from my body…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I decided that physical pleasure was wrong or dangerous…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to cover up and hide my physical self…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I became numb to physical sensations to feel safe…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_sensing_protection_or_decision" name="lf_sensing_protection_or_decision" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I disconnected from my body, I felt shame around physical pleasure…" rows="3" aria-label="How you adapted regarding sensing"></textarea>
+              </div>
+
+              <!-- Q4 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_sensing_relationship_playout" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  4. How does this pattern show up in your relationships today?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How might this affect physical intimacy, touch, or bodily presence in relationships?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-sensing-4">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-sensing-4" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for sensing in relationships">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I shut down around physical closeness or touch…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I avoid intimacy or feel shame around my body…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I over-control physical pleasure or deny it to myself…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I feel disconnected from my body during close moments…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_sensing_relationship_playout" name="lf_sensing_relationship_playout" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I feel disconnected from my body, I struggle with physical intimacy…" rows="3" aria-label="How sensing pattern shows up in relationships"></textarea>
+              </div>
+
+              <!-- Q5 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_sensing_new_self_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  5. What new permission message would you offer yourself?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A healing message for your sensory, embodied self.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-sensing-5">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-sensing-5" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for sensing permission message">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I am allowed to enjoy my body and senses."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My body is safe and worthy of pleasure."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "It is safe for me to be present in my body."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My sensory experience matters."</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_sensing_new_self_message" name="lf_sensing_new_self_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., My body is safe. I am allowed to enjoy my senses fully…" rows="3" aria-label="New permission message for sensing"></textarea>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================================================================== -->
+          <!-- SECTION 5 — BEING / ALIVENESS                                     -->
+          <!-- ================================================================== -->
+          <section id="section-being" data-section="5" data-section-title="Being / Aliveness" class="mb-12" aria-labelledby="heading-being">
+
+            <div class="section-divider border-brand/40 dark:border-brand/30 mb-6" style="border-color: rgba(54,214,181,0.4)">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-bold uppercase tracking-widest" style="color:#36D6B5">Section 5 of 6</span>
+                <span class="flex-1 border-t border-brand/20 dark:border-brand/15"></span>
+              </div>
+              <h2 id="heading-being" class="mt-1 text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Being / Aliveness</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">The domain of simply existing, your vitality, presence, and the right to take up space.</p>
+            </div>
+
+            <div class="space-y-6">
+
+              <!-- Q1 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_being_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  1. What messages did you receive about simply being yourself — your aliveness, presence, or existence?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">What was communicated about your right to exist, take up space, or simply be?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-being-1">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-being-1" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for being messages">
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Common messages in this domain:</p>
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "You're too much"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Tone it down"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Quiet down"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "Don't draw attention to yourself"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_being_message" name="lf_being_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Write whatever comes to mind…" rows="3" aria-label="Messages received about being and aliveness"></textarea>
+              </div>
+
+              <!-- Q2 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_being_example" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  2. Can you recall a specific example or memory?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A moment when your very presence or aliveness was too much, unwelcome, or invisible.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-being-2">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-being-2" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for being memory">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "A time I remember is being told I was 'too much' when I was excited…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I remember being invisible — my needs were simply not acknowledged…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I was told to make myself smaller so others felt comfortable…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_being_example" name="lf_being_example" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="Describe a specific memory or situation…" rows="3" aria-label="Specific example about being"></textarea>
+              </div>
+
+              <!-- Q3 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_being_protection_or_decision" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  3. How did you adapt? What decision did you make to stay safe or connected?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How did you shrink, hide, or modify your essential self to belong?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-being-3">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-being-3" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for being adaptation">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to make myself invisible and take up as little space as possible…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I decided that being 'too much' was dangerous, so I dimmed my light…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I learned to perform a version of myself that was acceptable…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I became hyper-vigilant about how much space I was taking up…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_being_protection_or_decision" name="lf_being_protection_or_decision" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I made myself invisible, I learned to dim my natural aliveness…" rows="3" aria-label="How you adapted regarding being"></textarea>
+              </div>
+
+              <!-- Q4 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_being_relationship_playout" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  4. How does this pattern show up in your relationships today?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">How might this affect your sense of belonging, visibility, or authenticity in relationships?</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-being-4">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-being-4" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for being in relationships">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I shut down when I feel like I'm 'too much' for my partner…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I avoid being fully present or authentic in relationships…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I over-control my natural enthusiasm to seem more acceptable…"</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I feel like I need to earn my right to be here…"</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_being_relationship_playout" name="lf_being_relationship_playout" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I shrink in groups, I feel like I need to earn my right to be here…" rows="3" aria-label="How being pattern shows up in relationships"></textarea>
+              </div>
+
+              <!-- Q5 -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_being_new_self_message" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  5. What new permission message would you offer yourself?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">A reclaiming message for your essential aliveness and right to exist fully.</p>
+                <div class="mb-3">
+                  <button type="button" class="examples-toggle text-xs font-medium hover:opacity-80 flex items-center gap-1 transition-colors" style="color:#36D6B5" aria-expanded="false" aria-controls="examples-being-5">
+                    <span class="examples-arrow transition-transform duration-200 inline-block">▶</span>
+                    Examples ↓
+                  </button>
+                  <div id="examples-being-5" class="examples-body mt-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3" role="region" aria-label="Examples for being permission message">
+                    <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I am allowed to take up space and be fully myself."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "My aliveness matters and is welcome."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "It is safe for me to be seen and known."</li>
+                      <li class="flex items-start gap-2"><span style="color:#36D6B5" class="mt-0.5">›</span> "I belong here simply by existing."</li>
+                    </ul>
+                  </div>
+                </div>
+                <textarea id="lf_being_new_self_message" name="lf_being_new_self_message" class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors" placeholder="e.g., I am allowed to take up space. My aliveness is welcome and needed…" rows="3" aria-label="New permission message for being"></textarea>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================================================================== -->
+          <!-- SECTION 6 — INTEGRATION                                           -->
+          <!-- ================================================================== -->
+          <section id="section-integration" data-section="6" data-section-title="Integration" class="mb-12" aria-labelledby="heading-integration">
+
+            <div class="section-divider border-brand/40 dark:border-brand/30 mb-6" style="border-color: rgba(54,214,181,0.4)">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-bold uppercase tracking-widest" style="color:#36D6B5">Section 6 of 6</span>
+                <span class="flex-1 border-t border-brand/20 dark:border-brand/15"></span>
+              </div>
+              <h2 id="heading-integration" class="mt-1 text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Integration</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">Reflect on the whole picture — patterns, insights, and intentions moving forward.</p>
+            </div>
+
+            <div class="space-y-6">
+
+              <!-- Most blocked domain -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_summary_most_blocked_domain" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  Which domain feels most blocked or restricted for you?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Looking across all five domains, which one feels most constrained or lost?</p>
+                <select
+                  id="lf_summary_most_blocked_domain"
+                  name="lf_summary_most_blocked_domain"
+                  class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm transition-colors"
+                  aria-label="Most blocked domain"
+                >
+                  <option value="">— Select one —</option>
+                  <option value="thinking">Thinking</option>
+                  <option value="feeling">Feeling</option>
+                  <option value="acting">Acting / Moving</option>
+                  <option value="sensing">Sensing</option>
+                  <option value="being">Being / Aliveness</option>
+                  <option value="not_sure">Not sure</option>
+                </select>
+              </div>
+
+              <!-- Most alive domain -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_summary_most_alive_domain" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  Which domain feels most alive or accessible for you?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Which domain do you feel most connected to, even if imperfectly?</p>
+                <select
+                  id="lf_summary_most_alive_domain"
+                  name="lf_summary_most_alive_domain"
+                  class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm transition-colors"
+                  aria-label="Most alive domain"
+                >
+                  <option value="">— Select one —</option>
+                  <option value="thinking">Thinking</option>
+                  <option value="feeling">Feeling</option>
+                  <option value="acting">Acting / Moving</option>
+                  <option value="sensing">Sensing</option>
+                  <option value="being">Being / Aliveness</option>
+                  <option value="not_sure">Not sure</option>
+                </select>
+              </div>
+
+              <!-- Core pattern -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_summary_core_pattern" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  What core pattern do you notice across your answers?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">
+                  Is there a theme, a repeated adaptation, or a central wound that seems to run through multiple domains?
+                </p>
+                <textarea
+                  id="lf_summary_core_pattern"
+                  name="lf_summary_core_pattern"
+                  class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors"
+                  placeholder="e.g., I notice a theme of making myself smaller to avoid conflict across almost every domain…"
+                  rows="4"
+                  aria-label="Core pattern across domains"
+                ></textarea>
+              </div>
+
+              <!-- One growth intention -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_summary_one_growth_intention" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  What is one growth intention you are taking from this assessment?
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">
+                  A small, concrete step or commitment to reclaiming a lost function — something you can practice this week.
+                </p>
+                <textarea
+                  id="lf_summary_one_growth_intention"
+                  name="lf_summary_one_growth_intention"
+                  class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors"
+                  placeholder="e.g., This week I will share one opinion in a conversation without immediately qualifying it…"
+                  rows="4"
+                  aria-label="One growth intention"
+                ></textarea>
+              </div>
+
+              <!-- Optional notes -->
+              <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <label for="lf_notes_optional" class="block text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  Anything else you'd like to note? <span class="font-normal text-slate-400">(Optional)</span>
+                </label>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">
+                  Any reflections, questions, or observations that don't fit neatly into the sections above.
+                </p>
+                <textarea
+                  id="lf_notes_optional"
+                  name="lf_notes_optional"
+                  class="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 px-4 py-3 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-colors"
+                  placeholder="Any additional thoughts, feelings, or observations…"
+                  rows="4"
+                  aria-label="Optional additional notes"
+                ></textarea>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================================================================== -->
+          <!-- SUBMIT AREA                                                        -->
+          <!-- ================================================================== -->
+          <div class="mt-8 mb-16">
+            <div class="rounded-2xl border border-brand/30 bg-brand/5 dark:bg-brand/10 p-6 sm:p-8">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Ready to submit your assessment?</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">
+                Your answers will be saved and shared with your therapist or coach. You can leave any field blank — there are no right or wrong answers.
+              </p>
+              <!-- ============================================================ -->
+              <!-- SUBMIT BUTTON: type="button" prevents native form submission  -->
+              <!-- Click handler reads all fields, builds absolute URL with      -->
+              <!-- URLSearchParams, sets agent + tags, then uses window.location -->
+              <!-- .assign() to redirect to paymegpt.com (NOT app.paymegpt.com) -->
+              <!-- ============================================================ -->
+              <button
+                type="button"
+                id="submitBtn"
+                class="btn-submit inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 active:scale-95"
+                style="background-color: #36D6B5;"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+                Submit Assessment
+              </button>
+              <p class="mt-3 text-xs text-slate-400 dark:text-slate-500">
+                You'll be redirected to a confirmation page after submission.
+              </p>
+            </div>
+          </div>
+
+        </form>
+        <!-- END FORM -->
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER                                                                      -->
+  <!-- ============================================================================ -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-6 px-4 sm:px-6 text-center text-xs text-slate-400 dark:text-slate-600">
+    <p>© 2025 PayMeGPT · IMAGO Lost Functions Assessment · Page 1 of 2</p>
+    <p class="mt-1">Your answers are saved locally and only shared when you submit.</p>
+  </footer>
+
+</div>
+<!-- END PAGE WRAPPER -->
+
+<!-- ============================================================================ -->
+<!-- JAVASCRIPT                                                                   -->
+<!-- All interactive functionality: theme, examples, autosave, scroll tracking   -->
+<!-- ============================================================================ -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
