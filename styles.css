@@ -122,7 +122,7 @@
       align-items: center;
     }
     .hero-logo-img {
-      height: 86px; /* ~25–35% larger than original 64px */
+      height: 86px;
       width: auto;
       object-fit: contain;
       filter: drop-shadow(0 2px 12px rgba(0,0,0,0.10));
@@ -134,7 +134,7 @@
 
     /* ─── NAV LOGO ───────────────────────────────────────── */
     .nav-logo-img {
-      height: 44px; /* 40–48px range */
+      height: 44px;
       width: auto;
       object-fit: contain;
       display: block;
