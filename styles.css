@@ -122,21 +122,19 @@
       align-items: center;
     }
     .hero-logo-img {
-      height: 64px;
+      height: 86px; /* ~25–35% larger than original 64px */
       width: auto;
       object-fit: contain;
-      /* Subtle drop shadow so logo reads on the gradient bg */
       filter: drop-shadow(0 2px 12px rgba(0,0,0,0.10));
       transition: filter 0.3s ease;
     }
     .dark .hero-logo-img {
-      /* Lighten slightly in dark mode if logo is dark-coloured */
       filter: drop-shadow(0 2px 16px rgba(0,0,0,0.40)) brightness(1.08);
     }
 
     /* ─── NAV LOGO ───────────────────────────────────────── */
     .nav-logo-img {
-      height: 30px;
+      height: 44px; /* 40–48px range */
       width: auto;
       object-fit: contain;
       display: block;
@@ -603,4 +601,9 @@
       background: rgba(124,158,178,0.10);
       border-color: rgba(124,158,178,0.20);
       color: #7C9EB2;
+    }
+
+    /* ─── SMOOTH SCROLL ──────────────────────────────────── */
+    html {
+      scroll-behavior: smooth;
     }
