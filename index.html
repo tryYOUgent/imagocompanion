@@ -39,18 +39,28 @@
        HEADER
   ════════════════════════════════════════════════════════ -->
   <header class="sticky top-0 z-40 header-blur border-b border-slate-200/50 dark:border-slate-800/50">
-    <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+    <div class="mx-auto max-w-6xl px-6 py-3 flex items-center justify-between">
 
-      <!-- Logo — replaces the previous SVG icon + wordmark combo -->
+      <!-- Logo -->
       <a href="#" class="flex items-center" style="text-decoration: none;">
-        <img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1774016962470_6D14DD6F-09CA-4BE2-B804-98A634EDEC3C.png" alt="IMAGO Companion" class="nav-logo-img" style="aspect-ratio: 1.0000; object-fit: cover; object-position: center;">
+        <img
+          src="https://paymegpt.com/objects/quick-uploads/189/c50b0d2193cf36b6.png"
+          alt="IMAGO Companion"
+          class="nav-logo-img"
+          style="height: 44px; width: auto; object-fit: contain; aspect-ratio: auto;"
+        >
       </a>
 
       <div class="flex items-center gap-3">
         <a href="#tools" class="hidden sm:inline-flex text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors">
           Tools
         </a>
-        <a href="#tools" class="inline-flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-semibold text-white btn-primary">
+        <!-- Get Started: smooth scroll to #start -->
+        <a
+          href="#start"
+          class="inline-flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-semibold text-white btn-primary"
+          onclick="event.preventDefault(); document.getElementById('start').scrollIntoView({ behavior: 'smooth' });"
+        >
           Get Started
         </a>
         <button id="themeToggle" class="rounded-xl border border-slate-200/70 dark:border-slate-700/70 px-3 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-all duration-200" aria-label="Toggle theme">
@@ -72,9 +82,14 @@
 
     <div class="relative mx-auto max-w-3xl px-6 pt-28 pb-22 sm:pt-36 sm:pb-32 text-center">
 
-      <!-- Hero logo — centered, above the headline -->
+      <!-- Hero logo — larger, centered, above the headline -->
       <div class="fade-up delay-1 hero-logo-wrap mb-9">
-        <img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1774017535092_Imago_Companion_Icon.png" alt="IMAGO Companion" class="hero-logo-img" style="aspect-ratio: 1.0000; object-fit: cover; object-position: center;">
+        <img
+          src="https://paymegpt.com/objects/quick-uploads/189/c50b0d2193cf36b6.png"
+          alt="IMAGO Companion"
+          class="hero-logo-img"
+          style="height: 86px; width: auto; object-fit: contain; aspect-ratio: auto;"
+        >
       </div>
 
       <div class="fade-up delay-1 flex justify-center mb-7">
@@ -100,7 +115,11 @@
 
       <div class="fade-up delay-3 mt-11 flex flex-col sm:flex-row items-center justify-center gap-3">
         <div class="cta-glow-wrap">
-          <a href="#start" class="inline-flex items-center gap-2 rounded-2xl px-7 py-3.5 text-sm font-semibold text-white btn-primary">
+          <a
+            href="#start"
+            class="inline-flex items-center gap-2 rounded-2xl px-7 py-3.5 text-sm font-semibold text-white btn-primary"
+            onclick="event.preventDefault(); document.getElementById('start').scrollIntoView({ behavior: 'smooth' });"
+          >
             Explore the Tools
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -521,7 +540,11 @@
 
         <!-- Footer logo -->
         <div class="flex items-center gap-3">
-          <img src="logo.png" alt="IMAGO Companion" style="height: 24px; width: auto; object-fit: contain; opacity: 0.70; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.08));">
+          <img
+            src="https://paymegpt.com/objects/quick-uploads/189/c50b0d2193cf36b6.png"
+            alt="IMAGO Companion"
+            style="height: 24px; width: auto; object-fit: contain; opacity: 0.70; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.08));"
+          >
         </div>
 
         <div class="flex items-center gap-6 text-xs text-slate-400 dark:text-slate-500">
