@@ -145,10 +145,17 @@ tailwind.config = {
   else{run();}
 })();
 
-// ── Year ──────────────────────────────────────────────
+// Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // ── Theme init (runs immediately, before paint) ───────
+    // Theme toggle
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const root = document.documentElement;
+      const isDark = root.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Theme init
     (function () {
       const saved = localStorage.getItem('theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -157,62 +164,44 @@ tailwind.config = {
       }
     })();
 
-    // ── Theme toggle ──────────────────────────────────────
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-
-    // ── Hero fade-up on DOMContentLoaded ─────────────────
-    // Uses double rAF to ensure the browser has painted the
-    // initial opacity:0 state before adding .visible, so the
-    // CSS transition actually fires on every page load.
-    document.addEventListener('DOMContentLoaded', () => {
+    // Fade-in on load (hero only)
+    window.addEventListener('load', () => {
+      const els = document.querySelectorAll('.fade-up');
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          document.querySelectorAll('.fade-up').forEach(el => {
-            el.classList.add('visible');
-          });
+          els.forEach(el => el.classList.add('visible'));
         });
       });
     });
 
     // ── Unified IntersectionObserver ──────────────────────
-    // Handles: .section-entry, .scroll-fade, .tool-card, .start-card
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
         const el = entry.target;
 
-        // section-entry and scroll-fade both use the .in-view class
-        if (el.classList.contains('section-entry') || el.classList.contains('scroll-fade')) {
+        if (el.classList.contains('section-entry')) {
           el.classList.add('in-view');
           io.unobserve(el);
           return;
         }
 
-        // tool-card and start-card use inline style opacity/transform
-        // (set during stagger registration below)
         el.style.opacity = '1';
         el.style.transform = 'translateY(0)';
         io.unobserve(el);
       });
     }, {
-      threshold: 0.08,
+      threshold: 0.10,
       rootMargin: '0px 0px -40px 0px'
     });
 
-    // Observe .section-entry blocks
+    // Observe section-entry blocks
     document.querySelectorAll('.section-entry').forEach(el => io.observe(el));
 
-    // Observe .scroll-fade blocks
-    document.querySelectorAll('.scroll-fade').forEach(el => io.observe(el));
-
-    // Register and observe tool cards with staggered delay
+    // Observe tool cards with staggered delay
     document.querySelectorAll('.tool-card').forEach((card, i) => {
       card.style.opacity = '0';
       card.style.transform = 'translateY(18px)';
-      // Preserve all existing hover/active transitions alongside the stagger
       card.style.transition = [
         `opacity 0.55s ease ${i * 0.09}s`,
         `transform 0.55s cubic-bezier(0.22,1,0.36,1) ${i * 0.09}s`,
@@ -222,11 +211,10 @@ tailwind.config = {
       io.observe(card);
     });
 
-    // Register and observe start cards with staggered delay
+    // Observe start cards with staggered delay
     document.querySelectorAll('.start-card').forEach((card, i) => {
       card.style.opacity = '0';
       card.style.transform = 'translateY(20px)';
-      // Preserve all existing hover/active transitions alongside the stagger
       card.style.transition = [
         `opacity 0.60s ease ${i * 0.11}s`,
         `transform 0.60s cubic-bezier(0.22,1,0.36,1) ${i * 0.11}s`,
