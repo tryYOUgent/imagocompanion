@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/</loc>
+    <lastmod>2026-08-27T15:51:42.950Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/register/</loc>
+    <lastmod>2026-08-27T15:24:29.295Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/rupture-repair-results/</loc>
     <lastmod>2026-08-27T15:05:21.058Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,16 +113,6 @@
   <url>
     <loc>https://imagocompanion.com/sign-in/</loc>
     <lastmod>2026-08-27T14:56:27.429Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/register/</loc>
-    <lastmod>2026-08-27T14:56:08.309Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-08-27T14:47:34.839Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
