@@ -1,53 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/register/</loc>
+    <lastmod>2026-08-27T14:56:08.309Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-08-27T14:42:07.988Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/lostfunctions/</loc>
-    <lastmod>2026-08-27T14:08:58.880Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/rupturerepair/</loc>
-    <lastmod>2026-08-27T13:21:40.115Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/lostfunctions/</loc>
-    <lastmod>2026-08-27T13:15:15.140Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/min-max/</loc>
-    <lastmod>2026-08-27T12:58:43.157Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/synthesisbuild/</loc>
-    <lastmod>2026-08-27T12:57:40.825Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/childhoodprofile/</loc>
-    <lastmod>2026-08-27T12:57:31.955Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/min-max/</loc>
-    <lastmod>2026-08-20T19:38:37.790Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/lostfunctions/</loc>
-    <lastmod>2026-08-17T14:11:43.747Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/synthesisbuild/</loc>
-    <lastmod>2026-07-13T20:40:36.283Z</lastmod>
+    <lastmod>2026-08-27T14:47:34.839Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
