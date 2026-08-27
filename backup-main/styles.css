@@ -1,0 +1,11 @@
+html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif}
+  h1,h2,h3,.font-serif{font-family:'Fraunces',serif}
+  .reflection-card{transition:all .6s cubic-bezier(.4,0,.2,1)}
+  .anim-target .check-mark{opacity:0;transform:scale(.4)}
+  .anim-target .card-bg{background:#F1E7D8;border-color:#E4D6C1}
+  .anim-target.completed-now .check-mark{opacity:1;transform:scale(1)}
+  .anim-target.completed-now .card-bg{background:#F2F5EF;border-color:#C7D3BE}
+  .check-mark{transition:all .5s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  .fade-up{animation:fadeUp .8s ease forwards}
