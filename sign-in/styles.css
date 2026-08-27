@@ -1,0 +1,11 @@
+body {
+      background:
+        radial-gradient(circle at 10% 12%, rgba(127,168,204,.13), transparent 27rem),
+        radial-gradient(circle at 92% 82%, rgba(168,187,138,.15), transparent 25rem),
+        #F7F5F0;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+
+#pin-gate input:focus{border-color:#2563eb !important;box-shadow:0 0 0 3px rgba(37,99,235,0.25) !important;outline:none !important;}
