@@ -1,0 +1,55 @@
+html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .paper-grain {
+      background-image:
+        radial-gradient(circle at 8% 6%, rgba(79,174,158,.09), transparent 26rem),
+        radial-gradient(circle at 94% 18%, rgba(91,127,166,.09), transparent 30rem);
+    }
+    @media print {
+      @page { margin: 15mm 14mm; }
+      html, body {
+        background: #fff !important;
+        color: #17375f !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+      [data-section="navbar"],
+      [data-section="actions"],
+      [data-section="footer"],
+      .screen-only {
+        display: none !important;
+      }
+      main { padding: 0 !important; }
+      [data-section="hero"] {
+        padding: 0 0 22px !important;
+        border-bottom: 1px solid #dbe5ea;
+      }
+      [data-section="vision"] {
+        padding-top: 24px !important;
+        padding-bottom: 16px !important;
+      }
+      [data-section="guidance"],
+      [data-section="closing"] {
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+      }
+      .vision-card, .prompt-card, .closing-card {
+        box-shadow: none !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .vision-card {
+        border: 1px solid #d5e0e7 !important;
+        margin-bottom: 15px !important;
+      }
+      .vision-statement {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .paper-grain { background-image: none !important; }
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
