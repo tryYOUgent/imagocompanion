@@ -1,0 +1,13 @@
+html{scroll-behavior:smooth}
+    body{background:#f7fafc;color:#334155}
+    button,textarea{font:inherit}
+    button:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid rgba(79,174,158,.28);outline-offset:3px}
+    textarea{resize:vertical}
+    .statement-card{transition:opacity .25s ease,background .25s ease,border-color .25s ease,transform .25s ease}
+    .statement-card.removed{background:#fff;border-style:dashed;box-shadow:none}
+    .statement-card.removed .card-content{opacity:.48}
+    .control{transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+    .control:active{transform:scale(.98)}
+    .spinner{width:42px;height:42px;border:3px solid #dce6ed;border-top-color:#17375f;border-radius:999px;animation:spin .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.statement-card,.control{transition:none}.spinner{animation-duration:1.6s}}
