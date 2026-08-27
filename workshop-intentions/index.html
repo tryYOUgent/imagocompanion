@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+
+<!-- SEO Meta Tags -->
+<title>IMAGO Workshop Intentions | Guided Reflection</title>
+<meta name="description" content="A guided IMAGO Companion reflection to help you clarify what you hope to understand, experience, and bring into your workshop." />
+<meta name="keywords" content="IMAGO workshop intentions" />
+<meta property="og:title" content="IMAGO Workshop Intentions | Guided Reflection" />
+<meta property="og:description" content="A guided IMAGO Companion reflection to help you clarify what you hope to understand, experience, and bring into your workshop." />
+<meta property="og:image" content="https://paymegpt.com/objects/quick-uploads/189/e7bebdbc85846acf.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="IMAGO Workshop Intentions | Guided Reflection" />
+<meta name="twitter:description" content="A guided IMAGO Companion reflection to help you clarify what you hope to understand, experience, and bring into your workshop." />
+<meta name="twitter:image" content="https://paymegpt.com/objects/quick-uploads/189/e7bebdbc85846acf.png" />
+<link rel="icon" href="/objects/quick-uploads/189/c50b0d2193cf36b6.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/objects/quick-uploads/189/c50b0d2193cf36b6.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/objects/quick-uploads/189/c50b0d2193cf36b6.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/objects/quick-uploads/189/c50b0d2193cf36b6.png" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mrnqtfax-95anf";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5566');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='pC5ska';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='pC5ska';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="sticky" data-section="header">
+  <div class="header-inner">
+    <div class="sticky-row"><a class="brand" href="https://paymegpt.com/p/Bjs45P" aria-label="Return to My IMAGO Journey" title="Return to My IMAGO Journey"><img src="https://paymegpt.com/objects/quick-uploads/189/e7bebdbc85846acf.png" alt="IMAGO Companion"></a><div class="header-right"><span class="progress-text"><span id="answeredCount">0</span> of 5 answered</span><button id="themeToggle" class="theme" type="button"><span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span></button></div></div>
+    <div class="bar"><div id="progressFill" class="fill"></div></div>
+  </div>
+</header>
+
+<main class="container" data-section="section-1">
+  
+
+  <div id="reflectionOverlay" class="reflection-overlay" role="dialog" aria-modal="true" aria-live="polite" aria-hidden="true">
+    <div class="reflection-modal">
+      <div class="reflection-spinner" aria-hidden="true"></div>
+      <h2>Preparing Your Personalized Reflection</h2>
+      <div class="reflection-live-wrap">
+        <div id="reflectionLiveMessage" class="reflection-live">Responses received</div>
+        <div class="reflection-progress" aria-hidden="true">
+          <div id="reflectionSteps" class="reflection-steps">
+            <span class="reflection-step active">●</span>
+            <span class="reflection-step future"></span>
+            <span class="reflection-step future"></span>
+            <span class="reflection-step future"></span>
+            <span class="reflection-step future"></span>
+            <span class="reflection-step future"></span>
+          </div>
+          <div class="reflection-bar"><div id="reflectionBarFill" class="reflection-bar-fill"></div></div>
+        </div>
+      </div>
+      <p>Your responses have been received.</p>
+      <p>We're organizing what you shared and preparing your personalized reflection.</p>
+      <p>Please don't refresh or close this page.</p>
+      <p>There's nothing you need to do. We'll automatically take you to the next step when everything is ready.</p>
+    </div>
+  </div>
+
+  <section class="intro">
+    <div class="eyebrow">Guided Reflection</div>
+    <h1>Workshop Intentions</h1>
+    <p>Take a moment to reflect on what brought you here, what you are looking forward to, and how you hope to show up for yourself, your partner, and your relationship throughout the workshop.</p>
+    <p class="meta">3–5 minutes · Private & confidential · 5 questions</p>
+    <p class="reassure">There are no right or wrong answers. Simply respond honestly and at your own pace.</p>
+  </section>
+
+  <div id="validation" class="validation"><strong>Please complete all five questions and enter a valid email before continuing.</strong></div>
+
+  <form id="reflectionForm" novalidate>
+    <section class="card">
+      <div class="card-head"><div class="number">1</div><div><h2>What Brought You Here</h2><p class="card-desc">Begin by reflecting on what led you to invest this time in your relationship.</p></div></div>
+      <p class="question">What inspired you to attend this workshop?</p><p class="helper">Share what brought you here or why now felt like the right time.</p>
+      <details><summary>See examples</summary><div class="examples">Feeling more connected · Understanding each other better · Growing together · Reconnecting after a difficult season · Learning a new way to connect · Making our relationship a priority</div></details>
+      <textarea id="q1" name="wi_why_here" placeholder="e.g., We want to feel more connected and understand each other better..."></textarea><p class="hint">Write your answer naturally. Your results will organize what you share.</p><p id="status-q1" class="status">Not answered</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><div class="number">2</div><div><h2>Looking Forward</h2><p class="card-desc">Focus on the experiences and possibilities you are hopeful about.</p></div></div>
+      <p class="question">What are you most looking forward to during this workshop?</p><p class="helper">Think about what you are excited, curious, or hopeful to experience together.</p>
+      <details><summary>See examples</summary><div class="examples">Spending intentional time together · Learning more about my partner · Having meaningful conversations · Slowing down together · Feeling more like a team · Growing as a couple</div></details>
+      <textarea id="q2" name="wi_looking_forward" placeholder="e.g., Spending intentional time together and having meaningful conversations..."></textarea><p class="hint">Write your answer naturally. Your results will organize what you share.</p><p id="status-q2" class="status">Not answered</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><div class="number">3</div><div><h2>How You Want to Show Up</h2><p class="card-desc">Consider the qualities you want to bring into the experience.</p></div></div>
+      <p class="question">How would you like your partner to experience you during this workshop?</p><p class="helper">Describe the qualities or attitude you hope to bring.</p>
+      <details><summary>See examples</summary><div class="examples">Present · Curious · Patient · Open · Supportive · Calm · Honest · Compassionate · Gentle · Respectful · Attentive · Grounded</div></details>
+      <textarea id="q3" name="wi_how_show_up" placeholder="e.g., Present, curious, patient, and open..."></textarea><p class="hint">Write your answer naturally. Your results will organize what you share.</p><p id="status-q3" class="status">Not answered</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><div class="number">4</div><div><h2>Your Intentional Practice</h2><p class="card-desc">Choose one concrete action you can return to throughout the workshop.</p></div></div>
+      <p class="question">What is one intentional behavior you would like to practice throughout this workshop?</p><p class="helper">Choose one small, meaningful action that will support connection.</p>
+      <details><summary>See examples</summary><div class="examples">Listen without interrupting · Pause before responding · Stay curious · Speak from my own experience · Remain open instead of defensive · Use a gentle tone of voice</div></details>
+      <textarea id="q4" name="wi_intentional_practice" placeholder="e.g., Listen without interrupting and pause before responding..."></textarea><p class="hint">Write your answer naturally. Your results will organize what you share.</p><p id="status-q4" class="status">Not answered</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><div class="number">5</div><div><h2>Carrying Hope Forward</h2><p class="card-desc">Reflect on what you hope continues beyond the workshop itself.</p></div></div>
+      <p class="question">What is one hope you would like to carry home with you after this workshop?</p><p class="helper">Think about what you would like to keep practicing, remembering, or building together.</p>
+      <details><summary>See examples</summary><div class="examples">Feeling more connected · Understanding each other more deeply · Continuing meaningful conversations · Greater hope for our relationship · Feeling more like a team · Continuing to grow together</div></details>
+      <textarea id="q5" name="wi_hope_forward" placeholder="e.g., That we leave feeling more connected and hopeful about our relationship..."></textarea><p class="hint">Write your answer naturally. Your results will organize what you share.</p><p id="status-q5" class="status">Not answered</p>
+    </section>
+
+    <section class="email-section">
+      <h2>Email for your private results</h2>
+      <p>This connects your reflection to the correct private results record and allows your summary to be emailed to you.</p>
+      <input id="emailInput" name="email" type="email" autocomplete="email" placeholder="your.email@example.com" required>
+      <div class="checkbox"><input id="marketingOptIn" type="checkbox"><label for="marketingOptIn">Allow IMAGO Companion to send occasional follow-up reminders and gentle nudges after the workshop.</label></div>
+    </section>
+
+    <div class="actions"><button id="submitBtn" class="submit" type="submit">Build My Reflection Summary</button></div>
+  </form>
+
+  <script>
+    (function () {
+      window.WEBHOOK_URL = 'https://paymegpt.com/api/webhooks/flow/4382/22e4d82263f169b41daf38e7eb124f7ada0b6d47ae7ce0d4a087996193805cda';
+      const RESULTS_PAGE_URL = 'https://paymegpt.com/p/wdcY2Knz8';
+      const overlay = document.getElementById('reflectionOverlay');
+      const live = document.getElementById('reflectionLiveMessage');
+      const submitBtn = document.getElementById('submitBtn');
+      const form = document.getElementById('reflectionForm');
+      const validation = document.getElementById('validation');
+      if (!overlay || !live || !submitBtn || !form) return;
+
+      const messages = [
+        'Responses received',
+        'Reflecting on what you shared…',
+        'Organizing your thoughts…',
+        'Looking for meaningful themes…',
+        'Preparing your personalized reflection…',
+        'Almost ready…'
+      ];
+
+      const steps = document.getElementById('reflectionSteps');
+      const barFill = document.getElementById('reflectionBarFill');
+
+      let messageIndex = 0;
+      let cycleTimer = null;
+      let overlayLocked = false;
+      let submitted = false;
+
+      function renderProgress(index) {
+        if (steps) {
+          steps.innerHTML = messages.map((_, i) => {
+            if (i < index) return '<span class="reflection-step complete">✓</span>';
+            if (i === index) return '<span class="reflection-step active">●</span>';
+            return '<span class="reflection-step future"></span>';
+          }).join('');
+        }
+        if (barFill) {
+          const pct = index >= messages.length - 1
+            ? 96
+            : Math.max(6, (index / (messages.length - 1)) * 100);
+          barFill.style.width = pct + '%';
+        }
+      }
+
+      function setMessage(index) {
+        if (!live) return;
+        live.classList.add('is-transitioning');
+        window.setTimeout(() => {
+          live.textContent = messages[index];
+          live.classList.remove('is-transitioning');
+        }, 140);
+        renderProgress(index);
+      }
+
+      function startMessageCycle() {
+        messageIndex = 0;
+        setMessage(0);
+        if (cycleTimer) clearInterval(cycleTimer);
+        cycleTimer = setInterval(() => {
+          if (messageIndex < messages.length - 1) {
+            messageIndex += 1;
+            setMessage(messageIndex);
+          } else {
+            setMessage(messageIndex);
+          }
+        }, 2200);
+      }
+
+      function showOverlay() {
+        overlay.classList.add('show');
+        overlay.setAttribute('aria-hidden', 'false');
+        overlayLocked = true;
+        startMessageCycle();
+      }
+
+      function hideOverlay() {
+        if (cycleTimer) {
+          clearInterval(cycleTimer);
+          cycleTimer = null;
+        }
+        overlay.classList.remove('show');
+        overlay.setAttribute('aria-hidden', 'true');
+        overlayLocked = false;
+      }
+
+      function blockClicks(e) {
+        if (overlayLocked) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }
+
+      overlay.addEventListener('click', blockClicks);
+      overlay.addEventListener('mousedown', blockClicks);
+      overlay.addEventListener('touchstart', blockClicks, { passive: false });
+
+      function buildResultsUrl(submissionId) {
+        return `${RESULTS_PAGE_URL}?submission_id=${encodeURIComponent(submissionId)}`;
+      }
+
+      function sanitizeAnswer(value) {
+        return String(value || '')
+          .replace(/\n+/g, ', ')
+          .replace(/(?:,\s*){2,}/g, ', ')
+          .replace(/\s{2,}/g, ' ')
+          .trim();
+      }
+
+      function collectPayload(submissionId, resultsUrl) {
+        const wi_why_here = sanitizeAnswer(document.getElementById('q1')?.value);
+        const wi_looking_forward = sanitizeAnswer(document.getElementById('q2')?.value);
+        const wi_how_show_up = sanitizeAnswer(document.getElementById('q3')?.value);
+        const wi_intentional_practice = sanitizeAnswer(document.getElementById('q4')?.value);
+        const wi_hope_forward = sanitizeAnswer(document.getElementById('q5')?.value);
+        const email = String(document.getElementById('emailInput')?.value || '').trim();
+        const marketing_opt_in = document.getElementById('marketingOptIn')?.checked ? 'yes' : 'no';
+
+        const atAGlance = [
+          `What brought you here: ${wi_why_here}`,
+          `Looking forward to: ${wi_looking_forward}`,
+          `How you want to show up: ${wi_how_show_up}`,
+          `Intentional practice: ${wi_intentional_practice}`,
+          `Hope to carry forward: ${wi_hope_forward}`
+        ].join(' | ');
+
+        const browserNarrative = `Reflection submitted for ${email}. They were inspired by ${wi_why_here}. They are most looking forward to ${wi_looking_forward}. They want to show up as ${wi_how_show_up}. Their intentional practice is ${wi_intentional_practice}. What they hope to carry forward is ${wi_hope_forward}.`;
+
+        return {
+          data: {
+            submission_id: submissionId,
+            contact_id: 'wi_' + Math.random().toString(36).slice(2,11),
+            email,
+            marketing_opt_in,
+            wi_why_here,
+            wi_looking_forward,
+            wi_how_show_up,
+            wi_intentional_practice,
+            wi_hope_forward,
+            synthesis_at_a_glance: atAGlance,
+            synthesis_narrative: browserNarrative,
+            results_url: resultsUrl,
+            timestamp: new Date().toISOString()
+          }
+        };
+      }
+
+      async function sendWebhook(payload) {
+        const res = await fetch(window.WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error(`Webhook request failed: ${res.status}`);
+        return res;
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        if (submitted) return;
+
+        const q1 = document.getElementById('q1');
+        const q2 = document.getElementById('q2');
+        const q3 = document.getElementById('q3');
+        const q4 = document.getElementById('q4');
+        const q5 = document.getElementById('q5');
+        const emailInput = document.getElementById('emailInput');
+        const fields = [q1, q2, q3, q4, q5, emailInput];
+
+        const valid =
+          q1?.value.trim() &&
+          q2?.value.trim() &&
+          q3?.value.trim() &&
+          q4?.value.trim() &&
+          q5?.value.trim() &&
+          emailInput?.validity?.valid;
+
+        [q1, q2, q3, q4, q5, emailInput].forEach(field => field?.classList.remove('error'));
+
+        if (!valid) {
+          [q1, q2, q3, q4, q5].forEach(field => {
+            if (!field?.value.trim()) field?.classList.add('error');
+          });
+          if (emailInput && !emailInput.validity.valid) emailInput.classList.add('error');
+          validation?.classList.add('show');
+          form.reportValidity?.();
+          return;
+        }
+
+        validation?.classList.remove('show');
+        submitted = true;
+
+        const submissionId = 'wi_'+((window.crypto&&crypto.randomUUID)?crypto.randomUUID():Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,11));
+        const resultsUrl = 'https://paymegpt.com/p/wdcY2Knz8?submission_id=' + encodeURIComponent(submissionId);
+        const payload = collectPayload(submissionId, resultsUrl);
+
+        if (!overlay.classList.contains('show')) showOverlay();
+        submitBtn.disabled = true;
+        if (!submitBtn.classList.contains('loading')) submitBtn.classList.add('loading');
+        submitBtn.dataset.originalText = submitBtn.dataset.originalText || submitBtn.textContent;
+
+        try {
+          await sendWebhook(payload);
+          window.location.assign(resultsUrl);
+        } catch (err) {
+          submitted = false;
+          hideOverlay();
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('loading');
+          validation?.classList.add('show');
+        }
+      }, true);
+
+      const observer = new MutationObserver(() => {
+        if (submitBtn.classList.contains('loading') || submitBtn.disabled) {
+          if (!overlay.classList.contains('show')) showOverlay();
+        }
+      });
+
+      observer.observe(submitBtn, { attributes: true, attributeFilter: ['class', 'disabled'] });
+
+      window.addEventListener('unhandledrejection', () => {
+        if (overlay.classList.contains('show')) {
+          hideOverlay();
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('loading');
+          submitted = false;
+        }
+      });
+    })();
+  </script>
+</main>
+<footer data-section="footer">IMAGO Companion · <span style="color:var(--muted)">Platform built by YOUgent · <a href="https://www.tryyougent.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">tryyougent.com</a></span></footer>
+
+<script>
+(function(){
+  const RESULTS_PAGE_URL='https://paymegpt.com/p/W8kdj5qmBt';
+  const WEBHOOK_URL='https://paymegpt.com/api/webhooks/flow/4382/22e4d82263f169b41daf38e7eb124f7ada0b6d47ae7ce0d4a087996193805cda';
+  const STORAGE_KEY='workshop_intentions_responses';
+  const THEME_KEY='workshop_intentions_theme';
+  const questions=[
+    {id:'q1',name:'wi_why_here',label:"Why You're Here"},
+    {id:'q2',name:'wi_looking_forward',label:"What You're Looking Forward To"},
+    {id:'q3',name:'wi_how_show_up',label:'How You Want to Show Up'},
+    {id:'q4',name:'wi_intentional_practice',label:'Your Intentional Practice'},
+    {id:'q5',name:'wi_hope_forward',label:"The Hope You're Carrying Forward"}
+  ];
+
+  function sanitize(text){return String(text||'').replace(/\r\n|\r|\n/g,', ').replace(/,\s*,+/g,', ').replace(/\s{2,}/g,' ').trim()}
+  function saved(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')}catch{return {}}}
+  function persist(){const data={};questions.forEach(q=>data[q.name]=document.getElementById(q.id).value);localStorage.setItem(STORAGE_KEY,JSON.stringify(data))}
+  function updateProgress(){let count=0;questions.forEach(q=>{const has=document.getElementById(q.id).value.trim().length>0;document.getElementById('status-'+q.id).textContent=has?'Answered':'Not answered';document.getElementById('status-'+q.id).classList.toggle('done',has);if(has)count++});document.getElementById('answeredCount').textContent=count;document.getElementById('progressFill').style.width=(count/5*100)+'%'}
+  questions.forEach(q=>document.getElementById(q.id).addEventListener('input',()=>{persist();updateProgress()}));
+  const prior=saved();questions.forEach(q=>{if(prior[q.name])document.getElementById(q.id).value=prior[q.name]});updateProgress();
+
+  function atAGlance(r){return questions.map(q=>q.label+': '+r[q.name]).join('\n')}
+  function browserNarrative(r){return `You are entering this workshop with a desire to ${r.wi_why_here}. You are looking forward to ${r.wi_looking_forward}, while hoping to show up as ${r.wi_how_show_up}. You are choosing to practice ${r.wi_intentional_practice}, and you want to carry forward ${r.wi_hope_forward}.`}
+
+  const validation=document.getElementById('validation');
+  document.getElementById('reflectionForm').addEventListener('submit',async e=>{
+    e.preventDefault();
+    validation.classList.remove('show');
+    questions.forEach(q=>document.getElementById(q.id).classList.remove('error'));
+    const responses={};let valid=true;
+    questions.forEach(q=>{const el=document.getElementById(q.id);responses[q.name]=sanitize(el.value);if(!responses[q.name]){valid=false;el.classList.add('error')}});
+    const emailInput=document.getElementById('emailInput');
+    const email=emailInput.value.trim();
+    if(!emailInput.checkValidity()){valid=false;emailInput.classList.add('error')}
+    if(!valid){validation.classList.add('show');validation.scrollIntoView({behavior:'smooth',block:'center'});return}
+
+    const btn=document.getElementById('submitBtn');btn.disabled=true;btn.classList.add('loading');
+    const submissionId='wi_'+((window.crypto&&crypto.randomUUID)?crypto.randomUUID():Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,11));
+    const resultsUrl=RESULTS_PAGE_URL+'?submission_id='+encodeURIComponent(submissionId);
+    const payload={data:{
+      submission_id:submissionId,
+      contact_id:'wi_'+Math.random().toString(36).slice(2,11),
+      email:email,
+      marketing_opt_in:document.getElementById('marketingOptIn').checked?'yes':'no',
+      wi_why_here:responses.wi_why_here,
+      wi_looking_forward:responses.wi_looking_forward,
+      wi_how_show_up:responses.wi_how_show_up,
+      wi_intentional_practice:responses.wi_intentional_practice,
+      wi_hope_forward:responses.wi_hope_forward,
+      synthesis_at_a_glance:atAGlance(responses),
+      synthesis_narrative:browserNarrative(responses),
+      results_url:resultsUrl,
+      timestamp:new Date().toISOString()
+    }};
+    try{
+      const response=await fetch(WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      if(!response.ok)throw new Error('Webhook failed: '+response.status);
+      window.location.href=resultsUrl;
+    }catch(error){console.error(error);btn.disabled=false;btn.classList.remove('loading');validation.innerHTML="<strong>We couldn't begin preparing your reflection. Please check your connection and try again.</strong>";validation.classList.add('show');validation.scrollIntoView({behavior:'smooth',block:'center'})}
+  });
+
+  const themeButton=document.getElementById('themeToggle'),themeIcon=document.getElementById('themeIcon'),themeLabel=document.getElementById('themeLabel');
+  function applyTheme(t){const dark=t==='dark';document.documentElement.classList.toggle('dark',dark);themeIcon.textContent=dark?'☀️':'🌙';themeLabel.textContent=dark?'Light':'Dark'}
+  applyTheme(localStorage.getItem(THEME_KEY)||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  themeButton.addEventListener('click',()=>{const next=document.documentElement.classList.contains('dark')?'light':'dark';localStorage.setItem(THEME_KEY,next);applyTheme(next)});
+})();
+</script>
+</body>
+</html>
