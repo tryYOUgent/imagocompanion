@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/</loc>
+    <lastmod>2026-08-27T14:42:07.988Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/lostfunctions/</loc>
     <lastmod>2026-08-27T14:08:58.880Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -43,11 +48,6 @@
   <url>
     <loc>https://imagocompanion.com/synthesisbuild/</loc>
     <lastmod>2026-07-13T20:40:36.283Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-03-20T16:37:40.524Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
