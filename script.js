@@ -3,6 +3,7 @@ tailwind.config = {
     extend: {
       colors: {
         cream: '#FAF6EE', beige: '#F1E7D8', sage: '#8A9683', sagedeep:'#5D6B54',
+        brand: '#5B7FA6', brandLight: '#7FA8CC', brandDark: '#3D5A7A',
         blush: '#E9D3C6', charcoal: '#2B2723', ink: '#4A443C'
       },
       fontFamily: { serif: ['Fraunces','serif'], sans: ['Inter','sans-serif'] },
