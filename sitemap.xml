@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-08-28T02:29:52.661Z</lastmod>
+    <loc>https://imagocompanion.com/journey-hub/</loc>
+    <lastmod>2026-08-28T02:36:37.622Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://imagocompanion.com/journey-hub/</loc>
-    <lastmod>2026-08-28T02:27:53.712Z</lastmod>
+    <loc>https://imagocompanion.com/workshop-intentions-results/</loc>
+    <lastmod>2026-08-28T02:35:25.229Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/rupture-repair-results/</loc>
+    <lastmod>2026-08-28T02:34:26.369Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/</loc>
+    <lastmod>2026-08-28T02:29:52.661Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -21,11 +31,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://imagocompanion.com/workshop-intentions-results/</loc>
-    <lastmod>2026-08-28T02:20:21.378Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://imagocompanion.com/workshop-intentions/</loc>
     <lastmod>2026-08-28T02:20:16.199Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -33,11 +38,6 @@
   <url>
     <loc>https://imagocompanion.com/sign-in/</loc>
     <lastmod>2026-08-28T02:20:10.552Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/rupture-repair-results/</loc>
-    <lastmod>2026-08-28T02:20:04.654Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
