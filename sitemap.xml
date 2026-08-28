@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/zero-negativity-results/</loc>
+    <lastmod>2026-08-28T02:20:32.675Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/zero-negativity/</loc>
     <lastmod>2026-08-28T02:20:27.022Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -108,11 +113,6 @@
   <url>
     <loc>https://imagocompanion.com/</loc>
     <lastmod>2026-08-28T02:18:19.479Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/zero-negativity-results/</loc>
-    <lastmod>2026-08-28T02:12:57.715Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
