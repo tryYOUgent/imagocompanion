@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/journey-hub/</loc>
+    <lastmod>2026-08-28T02:21:15.097Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/zero-negativity-results/</loc>
     <lastmod>2026-08-28T02:20:32.675Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -93,11 +98,6 @@
   <url>
     <loc>https://imagocompanion.com/lost-functions/</loc>
     <lastmod>2026-08-28T02:18:53.432Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/journey-hub/</loc>
-    <lastmod>2026-08-28T02:18:43.441Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
