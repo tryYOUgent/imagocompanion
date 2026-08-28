@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/lost-functions/</loc>
+    <lastmod>2026-08-28T02:49:40.169Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/minimizer-maximizer-results/</loc>
     <lastmod>2026-08-28T02:49:20.999Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://imagocompanion.com/lost-functions-results/</loc>
     <lastmod>2026-08-28T02:42:34.835Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/lost-functions/</loc>
-    <lastmod>2026-08-28T02:42:14.998Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
