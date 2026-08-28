@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://imagocompanion.com/</loc>
+    <lastmod>2026-08-28T01:54:36.667Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://imagocompanion.com/registration/</loc>
     <lastmod>2026-08-28T01:53:54.385Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -8,11 +13,6 @@
   <url>
     <loc>https://imagocompanion.com/journey-hub/</loc>
     <lastmod>2026-08-28T01:26:30.316Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-08-27T18:10:54.452Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
