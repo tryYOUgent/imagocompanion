@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://imagocompanion.com/rupture-repair-results/</loc>
-    <lastmod>2026-08-28T02:52:53.633Z</lastmod>
+    <loc>https://imagocompanion.com/</loc>
+    <lastmod>2026-08-28T14:24:37.789Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/registration/</loc>
+    <lastmod>2026-08-28T13:43:43.313Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/partner-profile/</loc>
+    <lastmod>2026-08-28T12:00:41.584Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/lost-functions/</loc>
+    <lastmod>2026-08-28T12:00:37.613Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/childhood-profile/</loc>
+    <lastmod>2026-08-28T12:00:30.204Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/minimizer-maximizer/</loc>
+    <lastmod>2026-08-28T12:00:26.627Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/zero-negativity/</loc>
+    <lastmod>2026-08-28T12:00:22.303Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/journey-hub/</loc>
+    <lastmod>2026-08-28T12:00:12.828Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://imagocompanion.com/rupture-repair/</loc>
-    <lastmod>2026-08-28T02:52:35.613Z</lastmod>
+    <lastmod>2026-08-28T10:52:55.109Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/rupture-repair-results/</loc>
+    <lastmod>2026-08-28T02:52:53.633Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -18,11 +58,6 @@
   <url>
     <loc>https://imagocompanion.com/our-relationship-vision/</loc>
     <lastmod>2026-08-28T02:51:57.706Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/childhood-profile/</loc>
-    <lastmod>2026-08-28T02:51:48.851Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -51,18 +86,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://imagocompanion.com/partner-profile/</loc>
-    <lastmod>2026-08-28T02:50:16.468Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://imagocompanion.com/lost-functions-results/</loc>
     <lastmod>2026-08-28T02:50:00.063Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/lost-functions/</loc>
-    <lastmod>2026-08-28T02:49:40.169Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -71,18 +96,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://imagocompanion.com/minimizer-maximizer/</loc>
-    <lastmod>2026-08-28T02:48:58.548Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://imagocompanion.com/childhood-profile-results/</loc>
     <lastmod>2026-08-28T02:48:33.572Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/journey-hub/</loc>
-    <lastmod>2026-08-28T02:48:19.501Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -91,28 +106,13 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://imagocompanion.com/zero-negativity/</loc>
-    <lastmod>2026-08-28T02:47:35.175Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://imagocompanion.com/workshop-intentions/</loc>
     <lastmod>2026-08-28T02:47:00.594Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-08-28T02:46:43.944Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://imagocompanion.com/sign-in/</loc>
     <lastmod>2026-08-28T02:20:10.552Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/registration/</loc>
-    <lastmod>2026-08-28T02:19:53.470Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
