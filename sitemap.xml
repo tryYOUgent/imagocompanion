@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://imagocompanion.com/partner-profile/</loc>
-    <lastmod>2026-08-28T02:50:16.468Z</lastmod>
+    <loc>https://imagocompanion.com/partner-profile-results/</loc>
+    <lastmod>2026-08-28T02:50:35.324Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://imagocompanion.com/workshop-intentions-results/</loc>
-    <lastmod>2026-08-28T02:50:11.860Z</lastmod>
+    <lastmod>2026-08-28T02:50:22.413Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/partner-profile/</loc>
+    <lastmod>2026-08-28T02:50:16.468Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://imagocompanion.com/my-relationship-vision/</loc>
     <lastmod>2026-08-28T02:44:20.529Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/partner-profile-results/</loc>
-    <lastmod>2026-08-28T02:43:47.885Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
