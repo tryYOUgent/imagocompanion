@@ -15,6 +15,25 @@ tailwind.config = {
 const mBtn = document.getElementById('mobileBtn'), mMenu = document.getElementById('mobileMenu');
   mBtn.addEventListener('click', () => mMenu.classList.toggle('hidden'));
   mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.add('hidden')));
+  mMenu.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling;
+      const icon = btn.querySelector('svg');
+      const isHidden = panel.classList.contains('hidden');
+      mMenu.querySelectorAll('.mobile-dropdown').forEach(other => {
+        if (other !== panel) other.classList.add('hidden');
+      });
+      mMenu.querySelectorAll('.mobile-dropdown-btn').forEach(otherBtn => {
+        if (otherBtn !== btn) {
+          otherBtn.setAttribute('aria-expanded', 'false');
+          otherBtn.querySelector('svg')?.classList.remove('rotate-180');
+        }
+      });
+      panel.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(isHidden));
+      icon?.classList.toggle('rotate-180', isHidden);
+    });
+  });
 
   const targets = document.querySelectorAll('.anim-target');
   const io = new IntersectionObserver((entries) => {
