@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://imagocompanion.com/</loc>
-    <lastmod>2026-08-28T14:33:55.944Z</lastmod>
+    <lastmod>2026-08-28T14:51:51.277Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://imagocompanion.com/journey-hub/</loc>
+    <lastmod>2026-08-28T14:44:20.248Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -33,11 +38,6 @@
   <url>
     <loc>https://imagocompanion.com/zero-negativity/</loc>
     <lastmod>2026-08-28T12:00:22.303Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://imagocompanion.com/journey-hub/</loc>
-    <lastmod>2026-08-28T12:00:12.828Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
