@@ -8,7 +8,21 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream: '#FAF6EE', beige: '#F1E7D8', sage: '#8A9683', sagedeep:'#5D6B54',
+        brand: '#5B7FA6', brandLight: '#7FA8CC', brandDark: '#3D5A7A',
+        blush: '#E9D3C6', charcoal: '#2B2723', ink: '#4A443C'
+      },
+      fontFamily: { serif: ['Fraunces','serif'], sans: ['Inter','sans-serif'] },
+      boxShadow: { soft: '0 20px 60px -25px rgba(43,39,35,0.25)' }
+    }
+  }
+}
+</script>
 
 
 <!-- SEO Meta Tags -->
@@ -313,7 +327,8 @@
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css">
+</script>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-cream text-charcoal antialiased">
 
@@ -401,7 +416,9 @@
   <div class="absolute top-40 -right-16 w-80 h-80 rounded-full bg-sage/20 blur-3xl"></div>
   <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-24 lg:pt-24 lg:pb-28 grid lg:grid-cols-2 gap-16 items-center relative">
     <div class="fade-up">
-      <p class="uppercase tracking-[0.2em] text-xs text-sage font-semibold mb-5">IMAGO RELATIONSHIP THERAPY</p>
+      <div class="mb-5">
+        <img src="https://app.tryyougent.com/objects/quick-uploads/189/9c1c846914200774.png" alt="IMAGO Relationships" class="w-[120px] sm:w-[135px] lg:w-[145px] h-auto object-contain">
+      </div>
       <h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] text-charcoal font-medium">Guided tools that help couples go deeper with IMAGO.</h1>
       <p class="mt-6 text-lg text-ink max-w-xl leading-relaxed">IMAGO Companion gives therapists and workshop presenters a structured way for couples to reflect, recognize relationship patterns, organize what they are learning, and prepare for meaningful dialogue.</p>
       <div class="mt-9 flex flex-wrap gap-4">
@@ -804,6 +821,11 @@
       <a href="#privacy" class="hover:text-cream">Privacy</a>
       <a href="https://app.tryyougent.com/p/Bjs45P" class="hover:text-cream">Sign In</a>
     </div>
+    <div class="flex justify-center mb-8">
+      <div class="bg-cream/95 rounded-2xl px-5 py-4 shadow-soft">
+        <img src="https://app.tryyougent.com/objects/quick-uploads/189/9c1c846914200774.png" alt="IMAGO Relationships" class="w-[120px] sm:w-[135px] lg:w-[145px] h-auto object-contain mx-auto">
+      </div>
+    </div>
     <div class="flex flex-col items-center gap-2">
       <p class="text-center text-xs text-cream/40">© 2026 IMAGO Companion. All rights reserved.</p>
       <p class="text-center text-[11px] text-cream/35">Built by <a href="https://www.tryyougent.com" target="_blank" rel="noopener noreferrer" class="hover:text-cream/70 transition">YOUgent</a></p>
@@ -811,7 +833,40 @@
   </div>
 </footer>
 
+<script>
+  const mBtn = document.getElementById('mobileBtn'), mMenu = document.getElementById('mobileMenu');
+  mBtn.addEventListener('click', () => mMenu.classList.toggle('hidden'));
+  mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.add('hidden')));
+  mMenu.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling;
+      const icon = btn.querySelector('svg');
+      const isHidden = panel.classList.contains('hidden');
+      mMenu.querySelectorAll('.mobile-dropdown').forEach(other => {
+        if (other !== panel) other.classList.add('hidden');
+      });
+      mMenu.querySelectorAll('.mobile-dropdown-btn').forEach(otherBtn => {
+        if (otherBtn !== btn) {
+          otherBtn.setAttribute('aria-expanded', 'false');
+          otherBtn.querySelector('svg')?.classList.remove('rotate-180');
+        }
+      });
+      panel.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(isHidden));
+      icon?.classList.toggle('rotate-180', isHidden);
+    });
+  });
 
-  <script src="script.js"></script>
+  const targets = document.querySelectorAll('.anim-target');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('completed-now'), 400 + i * 500);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  targets.forEach(t => io.observe(t));
+</script>
 </body>
 </html>
